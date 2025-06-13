@@ -1,0 +1,239 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure consistent box model */
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: transparent; /* Inherit background from html */
+}
+header {
+    background: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+nav ul li a:hover {
+    color: #aaa;
+}
+img.hero {
+    width: 100%;
+    max-width: 600px;      /* Limit the maximum width */
+    height: auto;
+    display: block;
+    max-height: 50vh;      /* Limit the maximum height to 50% of viewport */
+    object-fit: cover;
+    object-position: center;
+    margin: 24px auto 0 auto;
+    background-color: black;
+    box-shadow: none;
+    border: none;
+}
+
+img.hero:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+img.hero:active {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+summary {
+    background: #444;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+    font-size: 1.2em;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Stretch images to fill the container vertically */
+    gap: 32px;
+    margin: 32px 0;
+    height: 40vh; /* Set a fixed height for the row */
+}
+.image-row img {
+    width: 100%;
+    max-width: 180px;     /* Limit the maximum width */
+    height: auto;
+    object-fit: cover;    /* Fill the box, cropping if needed */
+    display: block;
+    margin: 0;
+}
+
+.center-image.hero {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;         /* Expand vertically */
+    max-height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+}
+
+.side-image {
+    width: 100%;
+    max-width: 180px;
+    height: 100%;         /* Expand vertically */
+    max-height: 100%;
+    object-fit: cover;    /* Fill the box, cropping if needed */
+    display: block;
+}
+.side-image:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.side-image:active {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+/* Only apply black background to home.html */
+body.home-page, html.home-page {
+    background: #000 !important;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border: #fff 1px solid;
+    color: azure;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: #fff 1px solid;
+}
+
+th {
+    background: #444;
+}
+td {
+    background: #333;
+}
+
+models-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px; /* Limit the maximum width */
+    width: 100%;
+    height: 100vh; /* Full height */
+    overflow: auto; /* Allow scrolling if content overflows */
+    background: #000; /* Black background */
+    color: #fff; /* White text */
+    font-family: Arial, sans-serif;
+    font-size: 16px; /* Default font size */
+    line-height: 1.5; /* Line height for readability */
+    background-color: #000; /* Black background */
+}
+
+/* Light gray background for the models page */
+body.models-page, html.models-page {
+    background: #0f0d0d;
+}
+
+.models-page table,
+.models-page th,
+.models-page td {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: color 0.3s;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Change background color for the services page */
+body.services-page, html.services-page {
+    background: #222 !important;
+    color: #fff !important;
+    font-family: Arial, sans-serif !important;
+    font-size: 16px !important; /* Default font size */
+    line-height: 1.5 !important; /* Line height for readability */
+}
+
+body.about-page, html.about-page {
+    background: #222 !important;
+    color: #fff !important;
+    font-family: Arial, sans-serif !important;
+    font-size: 16px !important; /* Default font size */
+    line-height: 1.5 !important; /* Line height for readability */
+}
+
+/* Add to style.css */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 32px;
+    background: #111;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    background: #222;
+}
+
+html.contact-page,body.contact-page {
+    background: #222 !important;
+    color: #fff !important;
+    font-family: Arial, sans-serif !important;
+    font-size: 16px !important; /* Default font size */
+    line-height: 1.5 !important; /* Line height for readability */
+
+}
+
+html.contact-page a, 
+body.contact-page a {
+    color: #4da6ff !important; /* Light blue */
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+html.contact-page a:hover, 
+body.contact-page a:hover {
+    color: #82cfff !important; /* Even lighter blue on hover */
+}
