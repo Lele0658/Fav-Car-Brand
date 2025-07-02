@@ -22,7 +22,7 @@ This is a simple yet elegant static website dedicated to showcasing the legacy, 
 
 1. **Clone the repository:**
 
-   git clone https://github.com/your-username/rolls-royce-site.git
+   git clone https://github.com/Lele0658/Fav-Car-Brand.git
    
 
 2. **Open the main file (`index.html`)** in any modern web browser:
